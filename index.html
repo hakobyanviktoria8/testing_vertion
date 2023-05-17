@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div>
+        <div class="calculator">
+          <div>
+            <label for="liquidityPool">Liquidity pool</label>
+            <input type="text" id="liquidityPool" onkeydown="calculate()" />
+          </div>
+          <div>
+            <label for="dividendPerkWh">Dividend per kWh</label>
+            <input type="text" id="dividendPerkWh" onkeydown="calculate()" />
+          </div>
+          <div>
+            <label for="investment">Your investment</label>
+            <input type="text" id="investment" onkeydown="calculate()" />
+          </div>
+          <div>
+            <label for="monthlyEnergyUsed">Monthly energy used</label>
+            <input type="text" id="monthlyEnergyUsed" onkeydown="calculate()" />
+          </div>
+          <div>
+            <label for="customers">Customers</label>
+            <input type="text" id="customers" onkeydown="calculate()" />
+          </div>
+        </div>
+
+        <div class="results">
+          <div>
+            <span>Pool monthly dividend</span>
+            <h2 id="poolMonthlyDividend">0</h2>
+          </div>
+          <div>
+            <span>Pool yearly dividend</span>
+            <h2 id="poolYearlyDividend">0</h2>
+          </div>
+          <div>
+            <span>Your share of the pool</span>
+            <h2 id="yourShareOfThePool">0</h2>
+          </div>
+          <div>
+            <span>Your monthly dividend</span>
+            <h2 id="yourMonthlyDividend">0</h2>
+          </div>
+          <div>
+            <span>Your yearly dividend</span>
+            <h2 id="yourYearlyDividend">0</h2>
+          </div>
+          <div>
+            <span>Your yearly ROI</span>
+            <h2 id="yourYearlyROI">0</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js" async></script>
+  </body>
+</html>
